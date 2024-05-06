@@ -3,9 +3,11 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: "Lobster Two", "Merriweather", sans-serif, serif;
+    font-family: "Merriweather", "Lobster Two", sans-serif, serif;
     list-style: none;
     text-decoration: none;
+    background-color: #C3C4AF;
+    color: black;
 
 
 }
@@ -78,4 +80,20 @@ section{
     width: 100%;
     height: 100vh;
     
+}
+
+h1{
+    font-size: 36px;
+    margin-top: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20 auto;
+    width: 80%;
+    max-width: 1200px;
+    padding: 10px;
+
 }
