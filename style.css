@@ -8,7 +8,6 @@
     text-decoration: none;
     background-color: #C3C4AF;
     color: black;
-
 }
 
 header{
@@ -27,7 +26,6 @@ header{
 .logo img{
     max-width: 120px;
     height: auto;
-
 }
 
 .navmenu{
@@ -96,3 +94,6 @@ h1{
     padding: 10px;
 
 }
+
+
+

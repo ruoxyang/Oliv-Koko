@@ -19,6 +19,7 @@ body {
     text-align: center;
     padding: 10px;
     font-size: 0.8em;
+    letter-spacing: 2px;
 }
 
 .navbar {
@@ -55,18 +56,21 @@ body {
     font-weight: bold;
 }
 
-.navbar-links ul,
+.navbar-links,ul{
+    display: contents;
+    padding: 10px;
+    list-style-type: none;
+}
 .navbar-icons {
     list-style: none;
     display: flex;
-    align-items: 30;
 }
 
-.navbar-links ul li,
-.navbar-icons div {
-    padding: 10px;
+.flag{
+    padding-top: 12px;
+    padding-left: 9px;
+    padding-right: 9px;
 }
-
 .navbar-links a {
     text-decoration: none;
     color: #000;
@@ -81,148 +85,284 @@ body {
     position: relative; 
     overflow: hidden;
 }
-.hero img{
+.hero div{
     width: 100%;
-    height: 1000px;
+    height: auto; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
 }
-
+.hero div img {
+    max-width: 100%; 
+    object-fit: cover; 
+    background-size: contain;
+}
 .hero h1 {
     font-size: 3em;
     font-family:'Lobster Two', sans-serif;
     position: absolute;
     bottom: 10%;
     left: 4%;
-    max-width: 60%;
+    max-width: 200px;
     margin: 0;
     color: #fff;
     border-bottom: 4px solid white;
     padding-bottom: 8px;
-    
+    white-space: nowrap;
 }
 
 .intro {
+    position: relative; 
+    text-align: center; 
     background-color: #c3c4af;
-    display: flex;
     padding: 50px;
 }
-.intro-text {
-    flex: 1;
-    padding-right: 50px; 
-    max-width: 50%;
+
+h2 {
+    font-size: 2em;
+    margin: 0 0 20px;
+    line-height: 1.3; 
+    font-size: 40;
+    line-height: 50px;
+    letter-spacing: 3px;
 }
 
-.intro-text p{
-    font-family: 'Merriweather',sans-serif;
-    flex: 1;
-    padding-right: 20px;
+.intro-content {
+    position: relative;
+    height: 500px; 
 }
 
-.intro-image img {
-    max-width: 40%; 
-    height: auto;
-    display: block; 
+.intro-content p{
+    font-family:'Merriweather',sans-serif;
+    position: absolute;
+    width: 30%;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 40px;
 }
-
-.intro h2 {
-    font-size: 2em; 
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.intro p {
-    font-size: 1em;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-.intro button{
+.bottom-right{
+    font-family:'Merriweather',sans-serif;
+    position: absolute;
+    width: 10%;
+    font-size: 16px;
+    border: 1.5px solid#000;
+    margin: 20px auto; 
     background-color: #c3c4af;
     color: #000;
-    padding: 10px 50px;
-    cursor: pointer;
-    border: 1px solid#000;
-    margin: 20px auto; 
+    bottom: 10px;
+    right: 50px;
 }
-.product ul {
+
+.top-left {
+    top: 10px;
+    left: 10px;
+    text-align: left;
+}
+
+.top-right {
+    top: 10px;
+    right: 10px;
+    text-align: right;
+}
+
+.bottom-left {
+    bottom: 10px;
+    left: 10px;
+    text-align: left;
+}
+
+
+.intro-image {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); 
+    width: 60%; 
+    height: auto;
+    
+}
+
+.product {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
-    gap: 20px; 
-    list-style: none; 
+    grid-template-columns: repeat(3, 1fr); 
+    grid-row-gap: 0px; 
+    grid-column: 5px;
+    padding-top: 54px;
+    padding-left:54px ;
+    box-sizing: border-box;
+    background-color: #FBFEF7;
+    margin: 50px;
+}
+
+.product ul {
+    list-style: none;
+    margin: 0;
     padding: 0;
-    margin: 20px 0;
+    width: 445px;
+    height: 482px; 
+    box-sizing: border-box;
+    flex-direction: row;
 }
-
-.product li {
-    background: #fff; 
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
-    text-align: center; 
-    border-radius: 5px; 
-    transition: transform 0.3s ease; 
-}
-
-.product li:hover {
-    transform: translateY(-5px); 
+.product ul li{
+    margin-bottom: 50px;
+    align-items: center;
 }
 
 .product img {
-    width: 100%; 
-    height: auto; 
-    border-top-left-radius: 5px; 
-    border-top-right-radius: 5px;
+    width: 445px;
+    height: 432px;
+    display: block;
+    box-sizing: border-box;
 }
+
+
 
 .product span {
     display: block; 
-    padding: 10px;
+    font-size: 24px;
+    line-height: 50px;
+    letter-spacing: 3px;
+    text-align: center; 
+    text-decoration: none;
+    color: #000;
+    padding-right: 50px;
 }
-.product button {
-    background: #fff; 
-    color: #000; 
-    border: 2px solid#000;
-    padding: 10px 30px; 
-    font-size: 16px; 
-    cursor: pointer; 
-    display: block; 
-    width: fit-content;
-    margin: 20px auto; 
+
+.Shop {
+    width: 200px;
+    height: 48px;
+    letter-spacing: 3px;
+    border: 2px solid black; 
+    background: none; 
+    color: black; 
+    display: block;
+    margin-left: 750px;
+    margin-bottom: 50px;
+    
 }
-.product button a {
-    color: #000; 
-    text-decoration: none; 
+.Shop a{
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
 }
 
 .product-details {
     font-family: 'Merriweather',sans-serif;
     background-color: #c3c4af; 
     color: #333;
-    padding: 40px; 
     display: flex; 
     flex-direction: column; 
     align-items: center; 
-    max-width: 920px;
-    margin: auto;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
-.product-details h2{
-    font-family: 'Lobster Two', sans-serif;;
-}
 
+.product-details ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center; 
+    width: 100%;
+    padding-top: 90px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.product-details ul li{
+    display: flex;
+    align-items: center;
+    margin-right: 80px;
+    margin-left: 80px;
+    margin-bottom: 100px;
+    font-size: 14px;
+    font-weight: bold;
+    width: 191px;
+    height: 49px;
+    letter-spacing: 3px;
+    line-height: 20px;
+}
+.product-details ul li img{
+    margin-right: 15px;
+    margin-bottom: 10px;
+    width: 45px;
+    height: 45px;
+}
 
 .product-details img {
     width: 80%; 
     margin-bottom: 20px; 
     border-radius: 8px; 
+    
 }
 
-.product-features, .product-testimonials, .product-info {
-    background: rgba(255, 255, 255, 0.9); 
-    padding: 20px;
-    border-radius: 8px;
-    margin: 20px 0;
-    width: 100%; 
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+
+.product-details h2{
+    font-family: 'Lobster Two', sans-serif;;
 }
 
+.product-features{
+    background-image: url('res/detail2.png');
+    display: flex;
+    background-size: cover;
+    width: 100%;
+    height:981px;
+    box-sizing: border-box;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center; 
+    position: relative;
+}
+.overlay-background {
+    position: relative;
+    width: 1134px;
+    height: 524px;
+    background: linear-gradient(to right, #817f6a 50%, rgba(255, 255, 255, 0) 100%), #817f6a;
+    display: flex;
+    justify-content: space-between;
+}
+.text-content {
+    width: 40%;
+    margin-left: 30px;
+    text-align: left;
+    box-sizing: border-box;
+    color: white;
+}
+.text-content h2{
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    
+    margin-top: 50px;
+}
+.text-content p{
+    font-size: 16px;
+    line-height: 40px;
+    letter-spacing: 3px;
+    margin-top: 55px;
+    width: 362px;
+}
+.text-content button{
+    background-color: rgba(129, 127, 106, 1);
+    width: 200px;
+    height: 48px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    border: 1px solid white;
+    margin-top: 30px;
+}
+.image-content {
+    width: 708px;
+    height: 524px;
+    overflow: hidden;
+}
+.image-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    transition: transform 0.5s ease;
+}
 
 .product-testimonials {
     display: flex;
