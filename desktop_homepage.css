@@ -312,27 +312,48 @@ h2 {
     justify-content: center; 
     position: relative;
 }
+.product-features::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(139, 139, 139, 0.7);
+    z-index: 0;
+}
 .overlay-background {
     position: relative;
     width: 1134px;
     height: 524px;
-    background: linear-gradient(to right, #817f6a 50%, rgba(255, 255, 255, 0) 100%), #817f6a;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 50px;
+}
+.overlay-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #817f6a 40%, rgba(129, 127, 106, 0.5) 60%, rgba(255, 255, 255, 0) 100%);
+    z-index: 1;
 }
 .text-content {
     width: 40%;
-    margin-left: 30px;
+    margin-left: 35px;
     text-align: left;
     box-sizing: border-box;
     color: white;
+    z-index: 2;
+    margin-bottom: 10px;
 }
 .text-content h2{
     font-size: 24px;
     line-height: 40px;
     font-weight: bold;
     letter-spacing: 3px;
-    
     margin-top: 50px;
 }
 .text-content p{
@@ -351,6 +372,7 @@ h2 {
     color: #fff;
     border: 1px solid white;
     margin-top: 30px;
+    letter-spacing: 3px;
 }
 .image-content {
     width: 708px;
@@ -360,7 +382,6 @@ h2 {
 .image-content img {
     width: 100%;
     height: 100%;
-    object-fit: cover; 
     transition: transform 0.5s ease;
 }
 
@@ -369,25 +390,34 @@ h2 {
     justify-content: space-between;
     padding: 20px;
     gap: 20px;
+    z-index: 2;
+    position: relative;
+    margin-bottom: 100px;
 }
 
 .testimonial {
-    flex: 1; 
+    width: 758px;
+    height: 326px;
+    flex: 1;
     padding: 10px;
-    background: #fff; 
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #c3c4af;
 }
 
 .testimonial blockquote {
     font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 3px;
+    color: #5a5a5a;
     margin-bottom: 10px;
 }
 
 .testimonial cite {
     font-weight: bold;
 }
-
 
 button {
     color: #000;
