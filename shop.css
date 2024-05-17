@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url("shop\ banner.jpeg");
+    background-image: url("res/shop\ banner.jpeg");
     width: 100%;
     height: 60vh;
     background-size: cover;
@@ -71,6 +71,7 @@
     color: #ECB7FF;
 
 }
+
 
 #product1 .pro .cart{
     width: 40px;
