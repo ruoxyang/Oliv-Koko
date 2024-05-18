@@ -4,8 +4,195 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>desktop_product</title>
+    <link rel="stylesheet" href="desktop_homepage.css">
+    <link rel="stylesheet" href="desktop_product.css">
+    <link rel="stylesheet"href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    
 </head>
 <body>
-    <div>hello world</div>
+    <!--product header-->
+    <header>
+        <div class="top-banner">
+            <p>$12.00 Standard Post Flat Shipping within Australia (Australia Post & Tracking No.) $15.00 Express Post</p>
+        </div>
+        <nav class="navbar">
+            <div><a href="#" class="logo"><img src="res/Heather+Hamilton+-+oliv&koko+logo.png"></a></div>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="">SHOP</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CUSTOMER CARE</a></li>
+                </ul>
+            </div>
+            <div class="navbar-icons">
+                    <a href="#"><i class='bx bx-search'></i></a>
+                    <a href="#"><i class='bx bx-heart'></i></a>
+                    <div class="flag"><img src="res/flag.png" alt="Australia Flag"></div>
+                    <a href="#"><i class='bx bx-cart'></i></a>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+    <section class="whole">
+        <div class="content-container">
+        <section class="left-part">
+            <div>
+                <h3>
+                    Shop > Lime and Coconut Soap
+                </h3>
+                <div><img src="res/Cart/cart1.png"></div>
+                <div class="below-img">
+                    <img src="res/Cart/cart1.png" >
+                    <img src="res/Cart/cart2.png" >
+                    <img src="res/Cart/cart3.png">
+                    <img src="res/Cart/cart4.png">
+                </div>
+            </div>   
+        </section>
+
+        <section class="right-part">   
+            <div>
+                <h1>Lime and Coconut Soap</h1>
+                <p>Lime and Coconut soap made with creamy coconut milk to provide extra moisturising qualities 
+                    combined with the extra virgin olive oil, organic shea butter and coconut oil. Organic macadamia 
+                    oil is also used which is beneficial for all skin types.
+                </p>
+            </div>
+
+            <div class="price-and-quantity">
+                <h2>$ <span id="price">9.50</span></h2>
+                <div class="quantity-selector">
+                    <button id="decrease" onclick="updateQuantity(-1)">-</button>
+                    <input type="text" id="quantity" value="1" onchange="updatePrice()">
+                    <button id="increase" onclick="updateQuantity(1)">+</button>
+                </div>
+            </div>
+
+            <div class="add-cart">
+                <button class="cart-layer">
+                <h2>ADD TO CART - $<span id="total">9.50</span></h2>
+                </button>
+            </div>
+            <div class="cart-detail">
+                <li class="share">
+                    <ul>Share: </ul>
+                    <ul><img src="res/icons/icons2.png"></ul>
+                    <ul><img src="res/icons/icons3.png"></ul>
+                </li>
+                <div class="features-ingredient">
+                    <span>Features</span>
+                    <div class="content hidden">
+                        Made in small batches<br>
+                        Recyclable paper label<br>
+                        Palm oil free and vegan<br>
+                        Handcrafted in Bayside Melbourne, Australia<br>
+                        No parabens, preservatives, synthetic detergent or petroleum<br>
+                        Handcrafted using the cold process method retaining the natural glycerin for a moisturising bar of soap<br>
+                    </div>
+                    <span>Ingredient</span>
+                    <div class="content hidden">
+                        Saponified extra virgin olive oil, coconut oil, 
+                        organic shea butter, macadamia oil, kaolin clay, coconut milk, lime, lemongrass, 
+                        lemon and patchouli essential oils.<br>Weight: 105-120g.
+                    </div>
+                    <p>To get the most from your handmade soap, please use a draining soap dish so the water can drain off.
+                         Allow the soap to drain and dry between uses. Avoid contact with eyes and discontinue use if 
+                         irritation occurs. External use only.
+                    </p>
+                </div>
+            </div>
+        
+        </div>
+        <section class="bottom-part">
+            <h2>You Might Also Like </h2>
+            <div class="suggestions">
+                <ul>
+                    <li>
+                        <img src="res/Cart/cart5.png">
+                        <h3>Stainless Steel Soap Dish</h3>
+                        <span>$23.00</span>
+                    </li>
+                    <li>
+                        <img src="res/Cart/cart6.png">
+                        <h3>Natural Cotton Gift Bag</h3>
+                        <span>$3.00</span>
+                    </li>
+                    <li>
+                        <img src="res/Cart/cart7.png">
+                        <h3>Organic Cotton and Hemp Face Washer</h3>
+                        <span>$7.00</span>
+                    </li>
+                    <li>
+                        <img src="res/Cart/cart8.png">
+                        <h3>Oatmeal and Manuka Honey with Rosehip Oil Soap Bar</h3>
+                        <span>$9.50</span>
+                    </li>
+                </ul>
+            </div>
+        
+        </section>
+        </section>
+       
+    </section>
+    </main>
+     <!--footer-->
+     <footer class="site-footer">
+        <div class="footer-top">
+            <div class="newsletter">
+                <h3>Want More Oliv & Koko?</h3>
+                <p>Be the first to hear about products update!</p>
+                <div class="email-container">
+                    <input type="email" placeholder="Email">
+                </div>
+                <p>Oliv & Koko acknowledges the traditional owners and custodians of country throughout Australia. 
+                    We recognise that Aboriginal and Torres Strait Islanders have spiritual, social and cultural connections 
+                    with their traditional lands and waters. We honour and respect the cultural heritage, customs and 
+                    beliefs of all Aboriginal and Torres Strait Islanders, and recognise that sovereignty was never ceded.</p>
+
+            </div>
+            <div class="footer-links">
+                <div class="links-column">
+                    <h3>Our Products</h3>
+                    <ul>
+                        <li><a href="#">Soaps</a></li>
+                        <li><a href="#">Mini Guest Soaps</a></li>
+                        <li><a href="#">Shower Steamers</a></li>
+                        <li><a href="#">Bath & Body</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Men's range</a></li>
+                        <li><a href="#">Gift Boxes</a></li>
+                    </ul>
+                </div>
+                <div class="links-column">
+                    <h3>Information</h3>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Reviews</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="social-media">
+                <a href="#"><img src="res/icons/icons1.png" alt="Instagram"></a>
+                <a href="#"><img src="res/icons/icons2.png" alt="Facebook"></a>
+                <a href="#"><img src="res/icons/icons3.png"lt="Twitter"></a>
+                <a href="#"><img src="res/icons/icons4.png" alt="LinkedIn"></a>
+            </div>
+
+        </div>
+        <div class="footer-bottom">
+            <div class="left-bottom"><p>© 2024 Oliv & Koko</p></div>           
+            <div class="right-bottom"><p>website by Ruoxi&Ziwei</p></div>
+        </div>
+    </footer>
+
+
+    <script src="desktop.js"></script>   
 </body>
 </html>
