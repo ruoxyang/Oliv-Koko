@@ -95,6 +95,7 @@ function addToDetail(){
     window.location.href = 'desktop_product.html';
 }
 
+
 document.addEventListener("DOMContentLoaded", function() {
     const mainImage = document.getElementById("main-image");
 
