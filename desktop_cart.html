@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>desktop_cart</title>
+    <link rel="stylesheet" href="desktop_homepage.css">
+    <link rel="stylesheet" href="desktop_cart.css">
+    <link rel="stylesheet"href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <!--homepage header-->
+    <header>
+        <div class="top-banner">
+            <p>$12.00 Standard Post Flat Shipping within Australia (Australia Post & Tracking No.) $15.00 Express Post</p>
+        </div>
+        <nav class="navbar">
+            <div><a href="#" class="logo"><img src="res/Heather+Hamilton+-+oliv&koko+logo.png"></a></div>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="">SHOP</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CUSTOMER CARE</a></li>
+                </ul>
+            </div>
+            <div class="navbar-icons">
+                    <a href="#"><i class='bx bx-search'></i></a>
+                    <a href="#"><i class='bx bx-heart'></i></a>
+                    <div class="flag"><img src="res/flag.png" alt="Australia Flag"></div>
+                    <a href="#"><i class='bx bx-cart'></i></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="whole">
+            <div class="cart-layer">
+                <h1>Shopping Cart</h1>
+            
+                 <div class="top-info">
+                     <h2>YOU ARE $56.00 AWAY FROM FREE SHIPPING</h2>
+                </div>
+                <div class="main-cart">
+                    <div class="main-left">
+                        <div class="item">
+                            <img src="res/Cart/cart1.png" alt="Lime and Coconut Soap">
+                            <div class="item-info">
+                                <h3>Lime and Coconut Soap</h3>
+                                <div class="quantity-price">
+                                    <div class="quantity-selector">
+                                        <button onclick="updateCartQuantity(-1, 1)">-</button>
+                                        <input type="text" id="quantity1" value="1" onchange="updateCartPrice(1)">
+                                        <button onclick="updateCartQuantity(1, 1)">+</button>
+                                    </div>
+                                    <h3>$ <span id="price1">9.50</span></h3>
+                                </div>
+                                <button class="remove-button">REMOVE</button>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img src="res/Cart/cart9.png" >
+                            <div class="item-info">
+                                <h3>Orange Blossom, Rose and Ylang</h3>
+                                <div class="quantity-price">
+                                    <div class="quantity-selector">
+                                        <button onclick="updateCartQuantity(-1, 2)">-</button>
+                                        <input type="text" id="quantity2" value="1" onchange="updateCartPrice(2)">
+                                        <button onclick="updateCartQuantity(1, 2)">+</button>
+                                    </div>
+                                    <h3>$ <span id="price2">9.50</span></h3>
+                                </div>
+                                <button class="remove-button">REMOVE</button>
+                            </div>
+                        </div>
+                        
+                        <button class="continue" onclick="addToShop()">Continue Shopping</button>
+                    </div>
+                    <div class="vertical-divider"></div>
+                    <div class="main-right">
+                        <h1>Summary</h1>
+                        <div class="summary-details">
+                            <h3>SUBTOTAL</h3>
+                            <h3>$<span id="subtotal">0.00</span></h3>
+                        </div>
+                        <div class="input-box">
+                            <h4>Gift Message</h4>
+                        </div>
+                        <button>CHECKOUT</button>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+     <!--footer-->
+     <footer class="site-footer">
+        <div class="footer-top">
+            <div class="newsletter">
+                <h3>Want More Oliv & Koko?</h3>
+                <p>Be the first to hear about products update!</p>
+                <div class="email-container">
+                    <input type="email" placeholder="Email">
+                </div>
+                <p>Oliv & Koko acknowledges the traditional owners and custodians of country throughout Australia. 
+                    We recognise that Aboriginal and Torres Strait Islanders have spiritual, social and cultural connections 
+                    with their traditional lands and waters. We honour and respect the cultural heritage, customs and 
+                    beliefs of all Aboriginal and Torres Strait Islanders, and recognise that sovereignty was never ceded.</p>
+
+            </div>
+            <div class="footer-links">
+                <div class="links-column">
+                    <h3>Our Products</h3>
+                    <ul>
+                        <li><a href="#">Soaps</a></li>
+                        <li><a href="#">Mini Guest Soaps</a></li>
+                        <li><a href="#">Shower Steamers</a></li>
+                        <li><a href="#">Bath & Body</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Men's range</a></li>
+                        <li><a href="#">Gift Boxes</a></li>
+                    </ul>
+                </div>
+                <div class="links-column">
+                    <h3>Information</h3>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Reviews</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="social-media">
+                <a href="#"><img src="res/icons/icons1.png" alt="Instagram"></a>
+                <a href="#"><img src="res/icons/icons2.png" alt="Facebook"></a>
+                <a href="#"><img src="res/icons/icons3.png"lt="Twitter"></a>
+                <a href="#"><img src="res/icons/icons4.png" alt="LinkedIn"></a>
+            </div>
+
+        </div>
+        <div class="footer-bottom">
+            <div class="left-bottom"><p>© 2024 Oliv & Koko</p></div>           
+            <div class="right-bottom"><p>website by Ruoxi&Ziwei</p></div>
+        </div>
+    </footer>
+    <script src="desktop.js"></script>
+</body>
+</html>

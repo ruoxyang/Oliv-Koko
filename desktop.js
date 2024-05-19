@@ -28,7 +28,7 @@ document.querySelectorAll('.below-img img').forEach(item => {
     });
 });
 
-
+//Hnadle price and quantity of products in product page.
 function updateQuantity(change) {
     const quantityInput = document.getElementById('quantity');
     let quantity = parseInt(quantityInput.value);
@@ -44,4 +44,48 @@ function updatePrice() {
     const quantity = parseInt(document.getElementById('quantity').value);
     const totalPrice = (pricePerUnit * quantity).toFixed(2); // Ensure two decimal places
     document.getElementById('total').innerText = totalPrice;
+}
+
+//Hnadle price and quantity of products in cart page.
+function updateCartQuantity(change, itemId) {
+    const quantityInput = document.getElementById('quantity'+ itemId);
+    let quantity = parseInt(quantityInput.value);
+    quantity = isNaN(quantity) ? 0 : quantity;
+    quantity += change;
+    quantity = quantity < 1 ? 1 : quantity; // Ensure quantity is never less than 1
+    quantityInput.value = quantity;
+    updateCartPrice(itemId);
+}
+
+function updateCartPrice(itemId) {
+    const pricePerUnit = 9.50; 
+    const quantity = parseInt(document.getElementById('quantity'+itemId).value);
+    const totalPrice = (pricePerUnit * quantity).toFixed(2);
+    document.getElementById('price'+itemId).textContent = totalPrice;
+    updateSubtotal();
+}
+function updateSubtotal() {
+    const items = document.querySelectorAll('.item-info');
+    let total = 0;
+    items.forEach(item => {
+        const priceText = item.querySelector('h3 span').textContent;
+        const price = parseFloat(priceText.replace('$', ''));
+        if (!isNaN(price)) { // Check if price is a number
+            total += price;
+        } else {
+            console.error('Error parsing price:', priceText);
+        }
+    });
+    console.log('Total calculated:', total);
+    document.getElementById('subtotal').textContent = total.toFixed(2);
+}
+
+//The product page jumps to the cart page.
+function addToCart() {    
+    window.location.href = 'desktop_cart.html'; 
+}
+
+// The cart page jumps to shop all page.
+function addToShop(){
+    window.location.href = 'shop.html';
 }
