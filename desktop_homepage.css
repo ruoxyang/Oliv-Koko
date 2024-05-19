@@ -35,7 +35,11 @@ body {
     width: 180px; 
     height: 50px; 
 }
-
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+}
 .navbar-icons .flag img {
     width: 30px;
     height: auto;
@@ -92,8 +96,9 @@ body {
     justify-content: center; 
     align-items: center;
 }
-.hero div img {
-    max-width: 100%; 
+.hero img {
+    height: 877px;
+    width: 100%; 
     object-fit: cover; 
     background-size: contain;
 }
@@ -173,14 +178,12 @@ h2 {
     text-align: left;
 }
 
-
 .intro-image {
     position: absolute;
     left: 50%;
     transform: translateX(-50%); 
     width: 60%; 
     height: auto;
-    
 }
 
 .product {
@@ -680,3 +683,124 @@ button {
 }
 
 
+@media (max-width: 390px) {
+    .top-banner{
+        display: none;
+    }
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 53px;
+    }
+    .hamburger-menu {
+        display: block;
+    }
+    .logo img{
+        width: 104px;
+        height: 30px;
+        margin-left: 12px;
+    }
+    .navbar-links {
+        display: none;
+        position: absolute;
+        top: 53px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        flex-direction: column;
+        text-align: left;
+    }
+    .flag,.heart{
+        display: none;
+    }
+
+    .navbar-links ul {
+        flex-direction: column;
+    }
+    .navbar-links li {
+        margin: 10px 0;
+        text-align: left;
+        padding: 10px;
+    }
+    .navbar-icons{
+        display: flex;
+        align-items: center;
+    }
+    .navbar-icons i {
+        font-size: 20px; 
+    }
+    .hero img{
+        width: 100%;
+        height: 760px;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+        left: 20px;
+        bottom: 20px;
+        max-width: 150px;
+        color: #5e5f58;
+        border-bottom: 4px solid #5e5f58;
+    }
+    .intro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .intro-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    .intro-content p {
+        width: 90%;
+        font-size: 14px;
+        line-height: 30px;
+        position: static; 
+        margin: 10px 0; 
+        text-align: center;
+    }
+
+    .bottom-right {
+        width: 80%;
+        font-size: 14px;
+        right: 10px;
+        position: static; 
+        margin: 20px 0;
+    }
+    .intro-image {
+        position: static; 
+        
+    }
+    .intro-image img{
+        position: static; 
+        width: 300px; 
+        height: 234px; 
+        margin-left: 10px;
+        padding-left: 25px;
+        padding-bottom: 10px;
+    }
+    
+    .product {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product ul {
+        width: 90%;
+        height: auto;
+    }
+
+    .product img {
+        width: 100%;
+        height: auto;
+    }
+
+    .Shop {
+        width: 90%;
+        margin: 20px auto;
+    }
+}
