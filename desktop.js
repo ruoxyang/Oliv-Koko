@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const mainImage = document.getElementById("main-image");
 
     function updateImageSource() {
-        if (window.innerWidth <= 400) {
+        if (window.innerWidth <= 435) {
             mainImage.src = "res/mainImg1.png";
         } else {
             mainImage.src = "res/Oliv_&_Koko-3165.jpg";
