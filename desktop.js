@@ -89,3 +89,23 @@ function addToCart() {
 function addToShop(){
     window.location.href = 'shop.html';
 }
+
+// The shop all page jumps to product detail page.
+function addToDetail(){
+    window.location.href = 'desktop_product.html';
+}
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const mainImage = document.getElementById("main-image");
+
+    function updateImageSource() {
+        if (window.innerWidth <= 435) {
+            mainImage.src = "res/mainImg1.png";
+        } else {
+            mainImage.src = "res/Oliv_&_Koko-3165.jpg";
+        }
+    }
+    updateImageSource();
+    window.addEventListener("resize", updateImageSource);
+});
