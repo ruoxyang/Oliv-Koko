@@ -2,10 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
 .cart-layer{
-    height: 847px;
+    height: 848px;
     background-color: #c3c4af;
     align-items: center;
     width: 100%;
+    
 }
 .cart-layer h1{
     font-family: 'Merriweather',sans-serif;
@@ -16,7 +17,6 @@
     letter-spacing: 2px;
     padding-top: 60px;
     padding-bottom: 20px;
- 
 }
 
 .top-info{
@@ -53,10 +53,11 @@
 }
 
 .main-left {
-    flex: 0 0 59%;
+    flex: 0 0 55%;
     display: flex;
     flex-direction: column;
-    width: 60%;  
+    width: 100%;  
+    position: relative;
 }
 
 .item {
@@ -110,7 +111,6 @@
     padding: 5px 5px;
     font-size: 15px; 
     font-weight: bold;
-    
 }
 
 .quantity-selector input {
@@ -123,26 +123,31 @@
     border: none;
     color: #000;
     cursor: pointer;
-    font-size: 10px;
+    font-size: 16px;
     font-weight: bold;
     letter-spacing: 3px;
     align-self: flex-start; 
     margin-top: 26px;  
     width: 60px;
     height: 31px; 
+    padding-left: 0px;
 }
 
 .continue{
-    align-self: center;
+    position: absolute;
+    margin-top: 420px;
+    margin-left: 80px;
     border: 1.25px solid #000;
-    background-color: #fefbf7;
-    margin-right: 355px;
-    font-size: 11px;
+    background-color: #fefbf7; 
+    font-size: 11px; 
     letter-spacing: 2px;
     padding-left: 20px;
     padding-right: 20px;
-    margin-top: 60px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
 }
+
 .vertical-divider {
     width: 0.5px;
     height: 467px;
@@ -155,7 +160,7 @@
     flex-direction: column;
     flex: 0 0 40%;
     width: 40%; 
-    padding-left: 20px; 
+    padding-left: 2px; 
 }
 
 .main-right h1{
@@ -195,4 +200,138 @@
     margin-top: 25px;
     font-size: 16px;
     letter-spacing: 2px;
+}
+
+@media (max-width: 435px) {
+    
+    .cart-layer{
+        height: 800px; 
+    }
+    .cart-layer h1{
+        font-size: 16px;
+        padding-top: 10px;
+    }
+    .top-info{
+       display: none;
+    }
+    .main-cart {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        padding: 15px; 
+        padding-bottom: 30px;
+        
+    }
+    .main-left{
+        width: 100%;
+        padding: 0;  
+    }
+
+    .item{
+        display: flex;
+        align-items: flex-start; 
+        justify-content: space-between;
+        margin: 0px;
+        margin-top: 20px;
+        border-bottom: 1px solid #d9d9d9;
+        padding-bottom: 20px;
+    }
+    .item-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-grow: 1;
+        margin-top: 0px;
+    }
+    .item img {
+        width: 109px; 
+        height: 112px;
+        flex-shrink: 0;
+    }
+    .item-info h3 {
+        font-size: 10px; 
+        letter-spacing: 2px; 
+        margin-bottom: 12px;
+        line-height: 20px;
+        font-weight: bold;
+        align-self: flex-start; 
+    }
+    
+    .quantity-price {
+        flex-direction: row; 
+        align-items: flex-start; 
+        margin-right: 0px;
+    }
+    .quantity-selector button, .quantity-selector input {
+        font-size: 12px; 
+        
+    }
+    .quantity-selector input {
+        width: 40px; 
+    }
+    .remove-button{
+        align-self: flex-start;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-size: 10px;
+    }
+    .continue {
+        position: relative;
+        margin: 0px;
+        width: 100%; 
+        width: 87%;
+        order: 5;
+        margin-left: 20px;
+        font-size: 11px;
+        font-weight: bold;
+    } 
+    
+    .main-right{
+        margin-left: 18px;
+    }
+    .main-right h1{
+        font-size: 13px;
+        font-weight: bold;
+        margin: 0px;
+        padding: 0px;
+        text-align: left;
+        order: 1;
+    }
+    .summary-details{
+        display: flex;
+        justify-content: space-between; /* Ensures that subtotal and price are on the same line */
+        align-items: center;
+        margin: 0px;
+        font-size: 10px;
+        font-weight: bold;
+        text-align: left;
+        order: 2;
+    }
+    .summary-details h3{
+        margin-bottom: 10px;
+    }
+    /* Adjust the vertical divider to not display on mobile */
+    .vertical-divider {
+        display: none;
+    }
+    .input-box{  
+        width: 280px;
+        height: 152px;
+        border: 1px solid #000;
+        background-color: #fefbf7;
+        margin-bottom: 5px;
+        order: 3;
+    }
+    .input-box h4{
+        line-height: 30px;
+        margin-top: 0px;
+        font-size: 10px;
+    }
+    .main-right button{
+        margin-bottom: 10px;
+        width: 280px;
+        order: 4;
+        font-size: 13px;
+    }
+    
 }

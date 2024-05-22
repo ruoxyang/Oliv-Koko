@@ -3,8 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
 
-
-
 #banner{
     display: flex;
     flex-direction: column;
@@ -16,15 +14,12 @@
     height: 60vh;
     background-size: cover;
     background-position: center;
-
 }
 
 #banner h2{
     color: #ffffff;
     font-size: 40px;
     font-family: Lobster Two, sans-serif;
-
-    
 }
 
 #product1{
@@ -37,8 +32,6 @@
     justify-content: space-between;
     padding-top: 20px;
     flex-wrap: wrap;
-
-
 }
 
 #product1 .pro{
@@ -52,8 +45,6 @@
     margin: 15px 0;
     transition: 0.2s ease;
     position: relative;
-
-
 }
 
 #product1 .pro:hover{
@@ -108,6 +99,4 @@
     position: absolute;
     bottom: 20px;
     right:10px;
-
-
 }
