@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment</title>
+    <link rel="stylesheet" href="payment.css">
+    <link rel="stylesheet" href="desktop_homepage.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Mukta:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Mukta:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div><a href="index.html" class="logo"><img src="res/Heather+Hamilton+-+oliv&koko+logo.png"></a></div>
+            <div class="navbar-icons">
+                <a href="#"><i class='bx bx-cart'></i></a>
+            </div>
+        </nav>
+
+    </header>
+
+    <section id="content" class="container">
+        <div class="row">
+            <div class="col">
+                <h3 class="title">Contact</h3>
+                <div class="inputBox">
+                    <input type="text" placeholder="Email">
+                </div>
+                <div class="info">
+                    <input type="checkbox" id="news-offer">
+                    <label for="news-offer">Email me with news and offers</label>
+                </div>
+            </div>
+
+            <div class="col">
+                <h3 class="title">Delivery</h3>
+                <div class="inputBox">
+                    <input type="radio" id="ship" name="delivery" checked>
+                    <input type="text" placeholder="Ship">
+                    <input type="radio" id="pick-up" name="delivery">
+                    <input type="text" placeholder="Pick Up">
+                    <select>
+                        <option value="">Country/Region</option>
+                    </select>   
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Last Name">
+                    <input type="text" placeholder="Company (optional)">
+                    <input type="text" placeholder="Address">
+                    <input type="text" placeholder="Apartment, suite, etc. (optional)">
+                    <input type="text" placeholder="City">
+                    <input type="text" placeholder="State/territory">
+                    <input type="text" placeholder="Postcode">
+                    <input type="text" placeholder="Phone (optional)">
+                    <div class="info">
+                        <input type="checkbox" id="text-offer">
+                        <label for="text-offer">Text me with news and offers</label>
+                    </div>
+                </div>                
+            </div>
+
+            <class="col">
+                <h3 class="title">Payment</h3>
+                <p>All transactions are secure and encrypted.</p>
+                <input type="radio" id="credit-card" name="payment" checked>
+                <label for="credit-card">Credit Card</label>
+                <div class="inputBox">
+                    <input type="text" placeholder="Card Number">
+                    <input type="text" placeholder="Expiration Date (MM/YY)">
+                    <input type="text" placeholder="Security Code">
+                    <input type="text" placeholder="Name On Card">
+
+
+                </div>
+                
+                    
+    
+            </div>
+        </div>
+
+    </section>
+</body>
+</html>
