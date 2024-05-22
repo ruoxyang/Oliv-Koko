@@ -3,8 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
 
-
-
 #banner{
     display: flex;
     flex-direction: column;
@@ -16,15 +14,12 @@
     height: 60vh;
     background-size: cover;
     background-position: center;
-
 }
 
 #banner h2{
     color: #ffffff;
     font-size: 40px;
     font-family: Lobster Two, sans-serif;
-
-    
 }
 
 #product1{
@@ -50,8 +45,6 @@
     margin: 30px;
     transition: 0.2s ease;
     position: relative;
-
-
 }
 
 #product1 .pro:hover{
@@ -117,39 +110,8 @@
     font-weight: 100;
     color: white;
     position: absolute;
-    bottom: 40px;
-    right: 20px;
-    border: none;
+    bottom: 20px;
+    right:10px;
 
-}
-#load{
-    background-color: #c3c4af;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    padding-bottom: 50px;
-    height: 50vh;
-
-}
-
-#load .product-count{
-    text-align: center;
-    font-family: Merriweather, sans-serif;
-
-
-}
-#load button{
-    background-color: #c3c4af;
-    width: 200px;
-    height: 48px;
-    font-size: 16px;
-    font-family: Merriweather, sans-serif;
-    font-weight: bold;
-    color: black;
-    border: 1px solid black;
-    margin-top: 30px;
-    letter-spacing: 3px;
 
 }
