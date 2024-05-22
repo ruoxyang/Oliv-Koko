@@ -29,20 +29,20 @@
 
 #product1 .pro-container{
     display: flex;
-    justify-content: space-between;
-    padding-top: 20px;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
     flex-wrap: wrap;
+
 }
 
 #product1 .pro{
-    width: 23%;
-    min-width: 250px;
-    padding: 10px 12px;
-    border: 1px solid #817f6a;
+    width: 20%;
+    max-width: 300px;
     background-color: #817F6A;
     cursor: pointer;
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
-    margin: 15px 0;
+    margin: 30px;
     transition: 0.2s ease;
     position: relative;
 }
@@ -57,9 +57,26 @@
 
 }
 
+#product1 .pro .sold-out{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 10px;
+    background: black;
+    color: white;
+    font-size: 14px;
+    width: 200px;
+    height: 40px;
+    font-family: Merriweather, sans-serif;
+    
+ 
+}
+
 #product1 .pro .des{
     text-align: start;
-    padding: 10px 0;
+    padding: 20px 10px;
+    
 }
 
 #product1 .pro .des h5{
@@ -82,21 +99,19 @@
     position: absolute;
     top: 10px;
     right: 10px;
-    font-size: 1.5em;
+    font-size: 30px;
     color: white;
+    border: none;
     
 }
 
 #product1 .pro .cart{
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    border-radius: 50px;
-    background-color: white;
-    font-weight: 500;
-    color: #088178;
-    border: 1px solid #ECB7FF;
+    font-size: 30px;
+    font-weight: 100;
+    color: white;
     position: absolute;
     bottom: 20px;
     right:10px;
+
+
 }
