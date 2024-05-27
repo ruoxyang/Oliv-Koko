@@ -16,13 +16,13 @@
     font-size: 13px;
     letter-spacing: 4px;
     padding-top: 60px;
-    margin-left: 150px;
+    margin-left: 50px;
     margin-bottom: 20px;
 }
 .left-part img{
     width: 496px;
     height: 506px;
-    margin-left: 250px;
+    margin-left: 150px;
     transition: width 0.3s ease, height 0.3s ease;
     
 }
@@ -30,7 +30,7 @@
     display: flex;
     justify-content: space-between; 
     align-items: center;
-    margin-left: 250px; 
+    margin-left: 150px; 
     margin-top: 15px;
     width: 496px; 
 }
@@ -54,7 +54,7 @@
 .right-part {
     display: flex;
     flex-direction: column;
-    margin-left: 190px; 
+    margin-left: 100px; 
     width: 50%; 
 }
 .right-part h1, .right-part p, .right-part h2, .right-part .add-cart {
@@ -64,6 +64,7 @@
 .right-part h1{
     font-size: 40px;
     padding-top: 70px;
+    font-family: 'Lobster Two',sans-serif;
 }
 
 .right-part p{
@@ -221,6 +222,7 @@
 
 .bottom-part{
     padding: 2px 10px;
+    
 }
 
 .bottom-part h2 {
@@ -240,17 +242,20 @@
     padding: 0; /* Removes padding */
     margin: 0 -20px;
     width: 70%;
-    margin-left: 200px;
+    margin-left: 50px;
+    margin-bottom: 30px;
 }
 
 .bottom-part .suggestions li {
     box-sizing: border-box;
     width: 296px; 
+    margin-right: 20px;
 }
 
 .bottom-part .suggestions img {
     width: 296px; 
     height: 296px; 
+    
 }
 
 .bottom-part h3 {
@@ -410,8 +415,6 @@
         font-size: 12px;
         
     }
-
-    
     .cart-detail{
         order: 5;
     }
