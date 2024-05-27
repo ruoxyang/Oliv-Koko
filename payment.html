@@ -33,7 +33,7 @@
 
     </header>
 
-    <section id="content" class="container">
+    <section class="left-content">
         <div class="row">
             <div class="col">
                 <h3 class="title">Contact</h3>
@@ -72,7 +72,7 @@
                 </div>                
             </div>
 
-            <class="col">
+            <div class="col">
                 <h3 class="title">Payment</h3>
                 <p>All transactions are secure and encrypted.</p>
                 <input type="radio" id="credit-card" name="payment" checked>
@@ -82,15 +82,56 @@
                     <input type="text" placeholder="Expiration Date (MM/YY)">
                     <input type="text" placeholder="Security Code">
                     <input type="text" placeholder="Name On Card">
-
-
                 </div>
-                
-                    
-    
+                <div class="info">
+                    <input type="checkbox" id="same-address">
+                    <label for="same-address">Use shipping address as billing address.</label>
+                </div>
+                <div>
+                    <input type="radio" id="paypal" name="payment">
+                    <label for="paypal">Paypal</label>
+                </div>   
+                <div>
+                    <input type="radio" id="afterpay" name="payment">
+                    <label for="afterpay">Afterpay</label>
+                </div>    
+                <div>
+                    <input type="radio" id="zip" name="payment">
+                    <label for="zip">Zip - Buy now, play later</label>
+                </div>     
+            </div>
+
+            <div class="col">
+                <h3 class="title">Remember Me</h3>
+                <div class="info">
+                    <input type="checkbox" id="faster-checkout">
+                    <label for="faster-checkout">Save My Information For A Faster Checkout</label>
+                </div>
             </div>
         </div>
-
+        <button class="pay-now">PAY NOW</button>
     </section>
+
+    <section class="right-content">
+        <div class="item">
+            <img src="res/p9.jpeg" alt="Lime and Coconut Soap">
+            <p>Lime and Coconut Soap</p>
+            <p>$9.50</p>
+        </div>
+        <div class="item">
+            <img src="res/p10.jpeg" alt="Orange Blossom, Rose and Ylang">
+            <p>Orange Blossom, Rose and Ylang</p>
+            <p>$9.50</p>
+        </div>
+        <div class="total">
+            <input type="text" placeholder="Discount code or gift card">
+            <button class="apply-btn">Apply</button>
+            <p class="subtotal">Subtotal<span>$19.00</span></p>
+            <p class="shipping">Shipping<span>Enter shipping address</span></p>
+            <p class="total">Total<span>$54.86</span></p>
+            <p class="tax">including $5.36 in taxes</p>
+        </div>
+    </section>
+
 </body>
 </html>
