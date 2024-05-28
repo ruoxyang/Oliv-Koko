@@ -109,3 +109,15 @@ document.addEventListener("DOMContentLoaded", function() {
     updateImageSource();
     window.addEventListener("resize", updateImageSource);
 });
+
+//Search Page Jump
+document.getElementById('search-button').addEventListener('click', function(event) {
+    event.preventDefault();  
+    var userInput = document.getElementById('search-input').value; 
+
+    if (userInput.toLowerCase() === 'lime and coconut soap') {
+        window.location.href = 'desktop_product.html';  
+    } else {
+        alert("No products found. Please try another search.");  
+    }
+});

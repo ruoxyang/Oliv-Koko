@@ -740,7 +740,6 @@ button {
         width: 100%;
         height: 760px;
     }
-
     .hero h1 {
         font-size: 2em;
         left: 20px;
@@ -753,6 +752,9 @@ button {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .intro h2{
+        font-family: 'Lobster Two',sans-serif;
     }
     .intro-content {
         display: flex;
@@ -791,6 +793,7 @@ button {
     .bottom-right{
         width: 60%;
         height: 60%;
+        padding: 10px;
     }
     
     .product {
@@ -820,6 +823,7 @@ button {
         white-space: nowrap; 
         text-align: center;
         padding-right: 0px;
+        font-family: 'Lobster Two',sans-serif;
     }
 
     .Shop {
@@ -827,6 +831,7 @@ button {
         height: 60%;
         margin: 10px auto;
         margin-bottom: 60px;
+        padding: 10px;
     }
     .product-details ul {
         display: flex;
@@ -969,7 +974,9 @@ button {
         margin-left: 0px;
     }
     .testimonial blockquote,h3{
-        margin-left: 3px;
+        font-size: 12px;
+        margin-left: 13px;
+        margin-right: 3px;
         margin-bottom: 10px;
     }
     .part3 {
@@ -1008,6 +1015,7 @@ button {
         width: 60%;
         margin-top: 30px;
         margin-bottom: 30px;
+        padding: 10px;
     }
     .product-info {
         width: 100%; 
@@ -1031,19 +1039,21 @@ button {
         transform: translateY(100px); 
         padding: 10px;
         box-sizing: border-box;
+        margin-bottom: 20px;
     }
 
     .layer h2, .layer p{
         font-size: 13px; 
         line-height: 2;
         width: 270px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
     .layer h3{
         display: none;
     }
    
     .footer-top {
+        margin-left: 0px;
         flex-direction: column;
         align-items: center;
     }
