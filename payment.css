@@ -10,49 +10,76 @@ body{
     
 }
 
+main{
+    padding: 30px;
+}
 
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 .left-content{
     display: flex;
-    flex: 3;
+    flex-direction: column;
+    flex: 5;
     justify-content: space-between;
-    padding: 20px;
+    padding-top: 20px;
+    padding-left: 50px;
+   
 }
 
 .right-content{
-    flex: 1;
-    background-color: #d3d3dd;
+    flex: 3;
+    padding: 20px;
+    background-color: #d3d3d3;
 }
 
 .left-content, .right-content{
-    padding: 20px;
     margin: 10px;
     border: 1px solid #e6e6e6;
     box-shadow: 0 0 10px rgba(0,0,0,0.1)
 }
 
 h3{
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 10px;
+    margin-right: 80px;
 }
 
 .inputBox input[type="text"], .inputBox input[type="radio"], .location{
-    width: 40%; 
+    width: 680px;
+    height: 48px;
     padding: 10px;
-    margin: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     border: none;
     box-sizing: border-box; 
+    font-family: Merriweather, sans-serif;
 }
 
 label{
     margin-left: 10px;
 }
 
+.contact{
+    margin-bottom: 10px;
+
+}
+
+.info{
+    margin:10px 0;
+}
+
+
 .pay-btn{
     padding: 10px 20px;
     background-color:  black;
     color: white;
-
+    width: 680px;
+    height: 50px;
+    margin: 30px;
 
 }
 
@@ -62,20 +89,64 @@ label{
 
 .total p{
     margin: 5px 0;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: light;
 }
 
-.item{
+.total .total{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.total span{
+    float: right;
+}
+
+.item-1, .item-2{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px;
-
+    margin-bottom: 30px;
+    gap: 5px;
 }
 
-.item img{
-    width: 50px;
-    height: 50px;
+.item-1 p, .item-2 p{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.item-1 .price, .item-2 .price{
+    margin-left: auto;
+    font-size: 14px;
+}
+
+.item-1 img{
+    width: 70px;
+    height: 76px;
     margin-right: 10px;
+}
+
+.item-2 img{
+    width: 70px;
+    height: 76px;
+    margin-right: 10px;
+}
+
+.apply input[type="text"]{
+    margin-top: 20px;
+    width: 330px;
+    height: 48px;
+    padding: 10px;
+    font-family: Merriweather, sans-serif;
+}
+
+.apply-btn{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    width: 110px;
+    height: 48px;
+    margin-left: 10px;
 }
 
 .footer{
