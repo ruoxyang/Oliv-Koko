@@ -82,7 +82,7 @@ function updateSubtotal() {
 
 //The product page jumps to the cart page.
 function addToCart() {    
-    window.location.href = 'desktop_cart.html'; 
+    window.location.href = 'cart.html'; 
 }
 
 // The cart page jumps to shop all page.
@@ -92,7 +92,7 @@ function addToShop(){
 
 // The shop all page jumps to product detail page.
 function addToDetail(){
-    window.location.href = 'desktop_product.html';
+    window.location.href = 'product.html';
 }
 
 
@@ -116,7 +116,7 @@ document.getElementById('search-button').addEventListener('click', function(even
     var userInput = document.getElementById('search-input').value; 
 
     if (userInput.toLowerCase() === 'lime and coconut soap') {
-        window.location.href = 'desktop_product.html';  
+        window.location.href = 'product.html';  
     } else {
         alert("No products found. Please try another search.");  
     }
