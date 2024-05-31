@@ -1,6 +1,7 @@
 /* styles.css */
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap');
 
 body{
     font-family: Merriweather, sans-serif;
@@ -10,101 +11,111 @@ body{
 .container{
     display: flex;
     flex-wrap: wrap;
-    padding: 80px;
+    margin: 90px 120px;
 }
 
 .left-content{
     flex-direction: column;
     flex: 5;
     justify-content: space-between;
-    padding-top: 20px;
-    padding-left: 50px;
    
 }
 
 .right-content{
     flex: 3;
-    padding: 20px;
+    padding: 30px;
     background-color: white;
+    min-height: 650px;
 }
 
 .confirmation{
-    flex: 1 1 100%;
     text-align: left;
-    margin-bottom: 20px;
-    margin-right: 20px;
+    margin-bottom: 70px;
 }
 
 .confirmation h1{
     color: #6DCC4B;
     font-size: 44px;
+    margin-bottom: 30px;
+    font-family: Stalinist One, sans-serif;
+    max-width: 7000px;
+}
+
+.confirmation p{
+    max-width: 600px;
+    word-spacing: 2px;
+    line-height: 40px;
+}
+
+
+.address h2{
+    font-size: 20px;
     margin-bottom: 10px;
-    font-family: Lobster Two, sans-serif;
 }
 
-.billing-address{
-    margin-right: 20px;
-}
-
-.billing-address h2{
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.billing-address p{
+.address p {
+    display: flex;
     margin: 5px 0;
+    font-size: 16px;
+    margin: 20px 0;
 }
 
-.billing-address button{
+
+.address span {
+    padding-left: 60px;
+    font-weight: lighter;
+}
+
+
+.track-btn button{
+    margin-top: 50px;
     display: block;
-    width: 100%;
+    width: 430px;
+    height: 48px;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #fff;
-    cursor: pointer;
+    color: #7d7d7d;
+    font-size: 16px;
+    font-family: Merriweather, sans-serif;
 }
 
-.billing-address button:hover{
-    background-color: #f0f0f0;
+
+.right-content h2{
+    font-size: 22px;
+    
 }
 
-.order-summary{
-    flex: 2;
-}
-
-.order-summary h2{
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.order-summary table{
-    width: 100%;
+table{
     border-collapse: collapse;
     margin-bottom: 20px;
 }
 
-.order-summary table th,
-.order-summary table td{
+table th,
+table td{
     border: 1px solid #ccc;
-    padding: 10px;
+    padding: 10px 50px 10px 5px;
     text-align: left;
+    font-size: 10px;
+    font-weight: black;
+}
+
+table th{
+    color: #C9CAC5;
 }
 
 .order-items{
-    margin-bottom: 20px;
+    margin-bottom: 80px;
 }
 
 .item{
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #ccc;
     padding: 10px 0;
 }
 
 .item img{
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
     margin-right: 10px;
 }
 
