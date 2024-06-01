@@ -92,7 +92,7 @@ table{
 
 table th,
 table td{
-    border: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
     padding: 10px 50px 10px 5px;
     text-align: left;
     font-size: 10px;
@@ -109,29 +109,70 @@ table th{
 
 .item{
     display: flex;
+    position: relative;
     align-items: center;
     padding: 10px 0;
 }
 
 .item img{
-    width: 80px;
-    height: 80px;
+   
+    width: 100px;
+    height: 100px;
     margin-right: 10px;
 }
 
-.item div{
-    flex: 1;
+.info{
+    width: 100%;
+    position: absolute;
+    top:10px;
+    left:110px;
+    text-align: left;
 }
 
-.item p{
-    margin: 0;
+.info p{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+    font-size: 12px;
+    
+   
 }
+
+.info span{
+    position: absolute;
+    left: 270px;
+
+}
+
+.info .quantity{
+    color: #C9CAC5;
+    position: absolute;
+    top: 70px;
+}
+
+
 
 .order-totals p,
 .order-totals h3{
     display: flex;
     justify-content: space-between;
     margin: 5px 0;
+
+   
+}
+
+.order-totals p{
+    color: #C9CAC5;
+    padding: 7px 0;
+    font-size:12px;
+    border-bottom: 1px solid #c9cac5 ;
+
+}
+
+.order-totals h3{
+    margin-top:15px;
+    font-size: 16px;
+    white-space: nowrap;
 }
 
 .order-totals span{
