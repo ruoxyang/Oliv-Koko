@@ -57,19 +57,19 @@ h3{
     border: none;
     box-sizing: border-box; 
     font-family: Merriweather, sans-serif;
+    
 }
 
 label{
     margin-left: 10px;
 }
 
-.contact{
-    margin-bottom: 10px;
-
-}
-
 .info{
     margin:10px 0;
+}
+
+.delivery{
+    margin-top:40px;
 }
 
 .selectBox-1, .selectBox-2{
@@ -101,19 +101,63 @@ label{
     padding-left: 7px;
 }
 
-.selectBox-1 .icon, .selectBox-2 .icon {
-    font-size: 1.5em;
+.selectBox-1 .car, .selectBox-2 .store{
+    font-size: 20px;
     color: black;
     border: none;
 }
 
+.delabel{
+    display: flex;
+    width:100%;
+    align-items: center;
+}
+
+.delabel .icon{
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.payment{
+    margin-top: 40px;
+}
+
+.payment .selectBox{
+    border:  1px solid #d3d3d3;
+    color: #757575;
+    background-color: white;
+    width:680px;
+    height: 48px;
+    font-size: 13px;
+    padding: 15px;
+}
+
+
+.remember{
+    margin-top: 40px;
+}
+
+.remember .info{
+    margin-top: 10px;
+    color: #757575;
+    border: 1px solid #e6e6e6;
+    background-color: white;
+    width:680px;
+    height: 48px;
+    font-size: 13px;
+    padding: 15px;
+
+}
+
+
+
+
 .pay-btn{
-    padding: 10px 20px;
     background-color:  black;
     color: white;
     width: 680px;
     height: 50px;
-    margin: 30px;
+    margin: 40px 0;
 
 }
 
@@ -141,7 +185,6 @@ label{
     display: flex;
     align-items: center;
     margin-bottom: 30px;
-    gap: 5px;
 }
 
 .item-1 p, .item-2 p{

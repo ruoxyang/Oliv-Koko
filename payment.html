@@ -51,17 +51,17 @@
                 <section class="delivery">
                     <h3>Delivery</h3>
                     <div class="selectBox-1">
-                        <label>
+                        <label class="delabel">
                             <input type="radio" name="delivery" value="ship" checked>
                             <span class="text">Ship</span>
-                            <span class="icon"><i class='bx bx-car'></i></span>
+                            <span class="icon"><a href="#"><i class="bx bx-car car"></i></a></span>
                         </label>
                     </div>
                     <div class="selectBox-2">
-                        <label>
+                        <label class="delabel">
                             <input type="radio" name="delivery" value="pickup">
                             <span class="text">Pick Up</span>
-                            <span class="icon"><i class='bx bx-store'></i></span>
+                            <span class="icon"><a href="#"><i class="bx bx-store store"></i></a></span>
                         </label>
                     </div>
                   
@@ -89,14 +89,17 @@
                 <section class="payment">
                     <h3>Payment</h3>
                     <p>All transactions are secure and encrypted.</p>
-                    <div class="inputBox">
+                    <div class="inputBox-gray">
                         <input type="radio" id="credit-card" name="payment" checked>
                         <label for="credit-card">Credit Card</label>
+
+                        <div class="input-container">
+                            
+                        </div>
                         <input type="text" placeholder="Card Number">
                         <input type="text" placeholder="Expiration Date (MM/YY)">
                         <input type="text" placeholder="Security Code">
                         <input type="text" placeholder="Name On Card">
-        
                     </div>               
                     <div class="info">
                         <input type="checkbox" id="same-address">
