@@ -72,6 +72,40 @@ label{
     margin:10px 0;
 }
 
+.selectBox-1, .selectBox-2{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    box-sizing: border-box;
+    width: 680px;
+    height:48px;
+    font-size: 14px;
+}
+
+.selectBox-1{
+    background-color:#d3d3d3;
+}
+
+.selectBox-2{
+    background-color: white;
+    margin-bottom: 40px;
+}
+
+.selectBox-1 .text {
+    padding-left: 7px;
+    font-weight: bold;
+    color: black;
+}
+
+.selectBox-2 .text {
+    padding-left: 7px;
+}
+
+.selectBox-1 .icon, .selectBox-2 .icon {
+    font-size: 1.5em;
+    color: black;
+    border: none;
+}
 
 .pay-btn{
     padding: 10px 20px;

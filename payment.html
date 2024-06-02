@@ -24,6 +24,7 @@
 </head>
 
 <body>
+
     <header>
         <nav class="navbar">
             <div><a href="index.html" class="logo"><img src="res/Heather+Hamilton+-+oliv&koko+logo.png"></a></div>
@@ -32,11 +33,12 @@
             </div>
         </nav>   
     </header>
+
     <main>
         <section class="container">
             <section class="left-content">
                 <section class="contact">
-                    <h3 class="title">Contact</h3>
+                    <h3>Contact</h3>
                     <div class="inputBox">
                         <input type="text" placeholder="Email">
                     </div>
@@ -47,13 +49,23 @@
                 </section>
         
                 <section class="delivery">
-                    <h3 class="title">Delivery</h3>
-                    <div class="selectBox">
-                        <input type="radio" id="ship" name="delivery" checked>
-                        <label for="ship">Ship</label>
-                        <input type="radio" id="pickup" name="delivery">
-                        <label for="pickup">Pick up</label>
-                    </div>           
+                    <h3>Delivery</h3>
+                    <div class="selectBox-1">
+                        <label>
+                            <input type="radio" name="delivery" value="ship" checked>
+                            <span class="text">Ship</span>
+                            <span class="icon"><i class='bx bx-car'></i></span>
+                        </label>
+                    </div>
+                    <div class="selectBox-2">
+                        <label>
+                            <input type="radio" name="delivery" value="pickup">
+                            <span class="text">Pick Up</span>
+                            <span class="icon"><i class='bx bx-store'></i></span>
+                        </label>
+                    </div>
+                  
+                        
                     <select class="location">
                         <option value="">Country/Region</option>
                     </select>
@@ -75,7 +87,7 @@
                 </section>
         
                 <section class="payment">
-                    <h3 class="title">Payment</h3>
+                    <h3>Payment</h3>
                     <p>All transactions are secure and encrypted.</p>
                     <div class="inputBox">
                         <input type="radio" id="credit-card" name="payment" checked>
@@ -105,7 +117,7 @@
                 </section>
         
                 <section class="remember">
-                    <h3 class="title">Remember Me</h3>
+                    <h3>Remember Me</h3>
                     <div class="info">
                         <input type="checkbox" id="faster-checkout">
                         <label for="faster-checkout">Save My Information For A Faster Checkout</label>
