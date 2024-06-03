@@ -89,22 +89,35 @@
                 <section class="payment">
                     <h3>Payment</h3>
                     <p>All transactions are secure and encrypted.</p>
+
                     <div class="inputBox-gray">
                         <input type="radio" id="credit-card" name="payment" checked>
                         <label for="credit-card">Credit Card</label>
 
                         <div class="input-container">
-                            
+                            <div class="wrapper">
+                                <input type="text" placeholder="Card Number">
+                                <span class="icon"><a href="#"><i class="bx bx-lock lock"></i></a></span>
+                            </div>
+                            <div class="row">
+                                <div class="wrapper-half-width">
+                                    <input type="text" placeholder="Expiration Date (MM/YY)">
+                                </div>
+                                <div class="wrapper-half-width">
+                                    <input type="text" placeholder="Security Code">
+                                </div>
+                            </div>
+                            <div class="wrapper">
+                                <input type="text" placeholder="Name On Card">
+                            </div>
+                        </div>  
+                        <div class="info">
+                            <input type="checkbox" id="same-address">
+                            <label for="same-address">Use shipping address as billing address.</label>
                         </div>
-                        <input type="text" placeholder="Card Number">
-                        <input type="text" placeholder="Expiration Date (MM/YY)">
-                        <input type="text" placeholder="Security Code">
-                        <input type="text" placeholder="Name On Card">
-                    </div>               
-                    <div class="info">
-                        <input type="checkbox" id="same-address">
-                        <label for="same-address">Use shipping address as billing address.</label>
-                    </div>
+                    </div>      
+
+                    
                     <div class="selectBox">
                         <input type="radio" id="paypal" name="payment">
                         <label for="paypal">Paypal</label>
