@@ -21,12 +21,27 @@
     font-family: Lobster Two, sans-serif;
 }
 
-.filter-container{
-    background-color: #c3c4af;
+
+.filter-container {
     display: flex;
     justify-content: space-between;
-    
+    padding-top: 40px;
+    background-color: #c3c4af;
 }
+
+.dropdown-button {
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    position: relative;
+    margin: 0 60px;
+}
+
+.arrow {
+    font-size: 0.8em;
+    margin-left: 5px;
+}
+
 
 #product1{
     text-align: center;
@@ -36,7 +51,6 @@
 #product1 .pro-container{
     display: flex;
     justify-content: center;
-    padding-top: 30px;
     padding-bottom: 120px;
     flex-wrap: wrap;
 }
