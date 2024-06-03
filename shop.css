@@ -86,9 +86,7 @@
     font-size: 14px;
     width: 200px;
     height: 40px;
-    font-family: Merriweather, sans-serif;
-    
- 
+    font-family: Merriweather, sans-serif; 
 }
 
 #product1 .pro .des{
@@ -167,7 +165,6 @@
         transition: 0.2s ease;
         position: relative;
     }
-
     .sold-out-icon{
         display: none;
     }
@@ -192,6 +189,15 @@
         padding: 10px,15px;
         font-size: 13px;
     }
-    
+   
+    .dropdown-button {
+        align-items: center;
+        font-size: 16px; 
+        padding: 10px ; 
+        margin-left: 150px;
+    }
+    .sort{
+        display: none;
+    }
 
 }
