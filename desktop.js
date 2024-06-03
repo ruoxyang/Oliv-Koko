@@ -70,7 +70,7 @@ function updateSubtotal() {
     items.forEach(item => {
         const priceText = item.querySelector('h3 span').textContent;
         const price = parseFloat(priceText.replace('$', ''));
-        if (!isNaN(price)) { // Check if price is a number
+        if (!isNaN(price)) { 
             total += price;
         } else {
             console.error('Error parsing price:', priceText);
@@ -104,8 +104,6 @@ function addToPayment(){
 function addToConfirm(){
     window.location.href = 'confirmation.html';
 }
-
-
 
 document.addEventListener("DOMContentLoaded", function() {
     const mainImage = document.getElementById("main-image");
