@@ -99,10 +99,16 @@ table td{
     font-weight: black;
 }
 
+
 table th{
     color: #C9CAC5;
 }
-
+.pay-info{
+    font-weight: 800;
+}
+.info p{
+    font-weight: bold;
+}
 .order-items{
     margin-bottom: 80px;
 }

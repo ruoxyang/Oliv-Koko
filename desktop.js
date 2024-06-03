@@ -95,6 +95,17 @@ function addToDetail(){
     window.location.href = 'product.html';
 }
 
+// The Cart page jumps to payment page.
+function addToPayment(){
+    window.location.href = 'payment.html';
+}
+
+// The payment page jumps to confirmation page.
+function addToConfirm(){
+    window.location.href = 'confirmation.html';
+}
+
+
 
 document.addEventListener("DOMContentLoaded", function() {
     const mainImage = document.getElementById("main-image");
@@ -121,3 +132,4 @@ document.getElementById('search-button').addEventListener('click', function(even
         alert("No products found. Please try another search.");  
     }
 });
+

@@ -57,9 +57,28 @@ h3{
     border: none;
     box-sizing: border-box; 
     font-family: Merriweather, sans-serif;
+}
+.input-pair input[type="text"] {
     
+    width: 335px;
+    display: inline-block;
+   
 }
 
+.input-trio input[type="text"] {
+    width: 220px;
+    display: inline-block;
+}
+
+.input-pair,.input-trio {
+    display: flex;
+    gap: 10px;
+}
+
+.input-pair input[type="text"]:last-child, .input-trio input[type="text"]:last-child {
+    margin-right: 0;
+    padding-right: 0px;
+}
 label{
     margin-left: 10px;
 }
@@ -121,7 +140,46 @@ label{
 .payment{
     margin-top: 40px;
 }
-
+.payment .inputBox-gray {
+    border: 1px solid #d3d3d3;
+    background-color: #d3d3d3;
+    width: 680px;
+    height: 274px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.payment .inputBox-gray input[type="text"] {
+    width: 647px;
+    height: 48px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    box-sizing: border-box;
+    font-family: Merriweather, sans-serif;
+}
+.payment .input-pair {
+    display: flex;
+}
+.payment .input-pair input[type="text"] {
+    width: 318px;
+    height: 48px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    box-sizing: border-box;
+    font-family: Merriweather, sans-serif;
+}
+.payment input[type="radio"] {
+    margin-right: 10px;
+}
+.payment label {
+    font-family: Merriweather, sans-serif;
+}
+.address-info{
+    font-size: 13px;
+}
 .payment .selectBox{
     border:  1px solid #d3d3d3;
     color: #757575;
@@ -204,9 +262,6 @@ label{
     font-size: 13px;
     padding: 15px;
 }
-
-
-
 
 .pay-btn{
     background-color:  black;
