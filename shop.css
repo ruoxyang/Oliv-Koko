@@ -156,51 +156,6 @@
     color: #fff;
 }
 
-@media (max-width: 435px) {
-    #banner {
-        height: 40vh;
-    }
-
-    #banner h2 {
-        font-size: 24px;
-    }
-
-    .filter-container {
-        flex-direction: column;
-        align-items: center;
-        padding-top: 20px;
-    }
-
-    .dropdown-button {
-        font-size: 16px;
-        margin: 10px 0;
-    }
-
-    #product1 .pro-container {
-        justify-content: space-between;
-        flex-wrap: wrap;
-        padding-bottom: 60px;
-    }
-
-    #product1 .pro {
-        width: 40%;
-        max-width: none;
-        margin: 20px;
-    }
-
-    #product1 .pro .sold-out{   
-        width: 120px;
-    }
-
-    .load-btn {
-        font-size: 14px;
-        padding: 10px 20px;
-        margin-bottom: 40px;
-    }
-
-    
-}
-
 
 @media (max-width: 435px) {
     #product1 .pro{
