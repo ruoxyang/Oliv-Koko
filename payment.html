@@ -24,7 +24,6 @@
 </head>
 
 <body>
-
     <header>
         <nav class="navbar">
             <div><a href="index.html" class="logo"><img src="res/Heather+Hamilton+-+oliv&koko+logo.png"></a></div>
@@ -64,20 +63,23 @@
                             <span class="icon"><a href="#"><i class="bx bx-store store"></i></a></span>
                         </label>
                     </div>
-                  
-                        
+                                         
                     <select class="location">
                         <option value="">Country/Region</option>
                     </select>
                     <div class="inputBox">
-                        <input type="text" placeholder="First Name">
-                        <input type="text" placeholder="Last Name">
+                        <div class="input-pair">
+                            <input type="text" placeholder="First Name">
+                            <input type="text" placeholder="Last Name">
+                        </div>
                         <input type="text" placeholder="Company (optional)">
                         <input type="text" placeholder="Address">
                         <input type="text" placeholder="Apartment, suite, etc. (optional)">
-                        <input type="text" placeholder="City">
-                        <input type="text" placeholder="State/territory">
-                        <input type="text" placeholder="Postcode">
+                        <div class="input-trio">
+                            <input type="text" placeholder="City">
+                            <input type="text" placeholder="State/territory">
+                            <input type="text" placeholder="Postcode">
+                        </div>
                         <input type="text" placeholder="Phone (optional)">
                     </div>
                     <div class="info">
@@ -92,19 +94,21 @@
                     <div class="inputBox-gray">
                         <input type="radio" id="credit-card" name="payment" checked>
                         <label for="credit-card">Credit Card</label>
-
-                        <div class="input-container">
-                            
+                        <div class="input-container">  
+                            <input type="text" placeholder="Card Number">
+                        </div>                        
+                        <div class="input-pair">
+                            <input type="text" placeholder="Expiration Date (MM/YY)">
+                            <input type="text" placeholder="Security Code">
                         </div>
-                        <input type="text" placeholder="Card Number">
-                        <input type="text" placeholder="Expiration Date (MM/YY)">
-                        <input type="text" placeholder="Security Code">
                         <input type="text" placeholder="Name On Card">
-                    </div>               
-                    <div class="info">
-                        <input type="checkbox" id="same-address">
-                        <label for="same-address">Use shipping address as billing address.</label>
-                    </div>
+                        <div class="info">
+                            <input type="checkbox" id="same-address">
+                            <span class="address-info">
+                            <label for="same-address">Use shipping address as billing address.</label>  
+                        </span>               
+                        </div>                        
+                    </div>                                                      
                     <div class="selectBox">
                         <input type="radio" id="paypal" name="payment">
                         <label for="paypal">Paypal</label>
@@ -128,7 +132,7 @@
                 </section>
         
                 <section class="pay">
-                    <button class="pay-btn">PAY NOW</button>
+                    <button class="pay-btn" onclick="addToConfirm()">PAY NOW</button>
                 </section>
         
             </section>
@@ -155,9 +159,8 @@
                     <p class="tax">including $5.36 in taxes</p>
                 </div>
             </section>
-        </section>
-    
+        </section>   
     </main>    
-
+    <script src="desktop.js"></script>
 </body>
 </html>
