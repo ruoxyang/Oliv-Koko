@@ -190,6 +190,63 @@ label{
     padding: 15px;
 }
 
+.inputBox-gray {
+    background-color: #d3d3d3;
+    padding: 10px;
+    width:680px;
+    margin-top: 10px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.wrapper input{
+    margin-top: 10px;
+    width: 100%;
+    width: 660px;
+    height: 48px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #d3d3d3;
+    box-sizing: border-box;
+    font-family: Merriweather, sans-serif;
+    font-size: 13px;
+}
+
+.wrapper .lock {
+    position: absolute;
+    right: 10px;
+    top: 55%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: black;
+    border: none;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper-half-width input{
+    width: 50%;
+    width: 325px;
+    margin-top: 10px;
+    height: 48px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #d3d3d3;
+    box-sizing: border-box;
+    font-family: Merriweather, sans-serif;
+    font-size: 13px;
+}
+
 
 .remember{
     margin-top: 40px;
@@ -204,7 +261,6 @@ label{
     height: 48px;
     font-size: 13px;
     padding: 15px;
-
 }
 
 .pay-btn{
