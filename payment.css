@@ -359,17 +359,11 @@ label{
 
     .selectBox-1, .selectBox-2, .payment .inputBox-gray, .payment .selectBox, .inputBox input[type="text"], .inputBox input[type="radio"], .location, .wrapper input, .wrapper-half-width input, .remember .info, .pay-btn, .input-container input{
         width: 100%;
-        box-sizing: border-box;
-      
     }
    
 
-    .payment .inputBox-gray input[type="text"], .payment .input-pair input[type="text"] {
+    .payment .inputBox-gray input[type="text"]{
         width: 100%;
-        margin: 10px 0;
-        box-sizing: border-box;
     }
-
-  
 
 }
