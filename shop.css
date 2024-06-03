@@ -22,6 +22,13 @@
     font-family: Lobster Two, sans-serif;
 }
 
+.filter-container{
+    background-color: #c3c4af;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
 #product1{
     text-align: center;
     background-color: #c3c4af;
@@ -30,8 +37,8 @@
 #product1 .pro-container{
     display: flex;
     justify-content: center;
-    padding-top: 100px;
-    padding-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 120px;
     flex-wrap: wrap;
 
 }
@@ -40,7 +47,6 @@
     width: 20%;
     max-width: 300px;
     background-color: #817F6A;
-    cursor: pointer;
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
     margin: 30px;
     transition: 0.2s ease;
@@ -83,15 +89,17 @@
     padding-top: 7px;
     font-family: Lobster Two, sans-serif;
     color: white;
-    font-size: 18px;
+    font-size: 16px;
+    font-weight:lighter;
 
 }
 
 #product1 .pro .des h4{
-    padding-top: 7px;
+    padding-top: 10px;
     font-size: 16px;
     font-weight: 700;
     color: #ECB7FF;
+    margin-bottom: 10px;
 
 }
 
@@ -106,11 +114,34 @@
 }
 
 #product1 .pro .cart{
-    font-size: 30px;
-    font-weight: 100;
+    font-size: 22px;
     color: white;
     position: absolute;
     bottom: 20px;
     right:10px;
     border: none;
+}
+
+.section-call{
+    text-align: center;
+    background-color: #c3c4af;
+
+}
+
+.product-count{
+   margin-bottom: 20px;
+}
+
+.load-btn {
+    padding: 10px 40px;
+    font-family: Merriweather, sans-serif;
+    font-size: 16px;
+    border: 1px solid #000;
+    background-color: transparent;
+    margin-bottom: 80px;
+}
+
+.load-btn:hover {
+    background-color: #000;
+    color: #fff;
 }
