@@ -342,4 +342,32 @@ label{
     align-items: center;
 }
 
+@media (max-width: 435px){
+    .container{
+        flex-direction: column;
+    }
 
+    .left-content{
+        width: 100%;
+        padding: 10px;
+        min-height: auto;
+    }
+
+    .right-content{
+        display: none;
+    }
+
+    .selectBox-1, .selectBox-2, .payment .inputBox-gray, .payment .selectBox, .inputBox input[type="text"], .inputBox input[type="radio"], .location, .wrapper input, .wrapper-half-width input, .remember .info, .pay-btn, .input-container input{
+        width: 100%;
+        box-sizing: border-box;
+      
+    }
+    
+
+
+
+  
+
+  
+
+}
