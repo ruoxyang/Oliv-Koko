@@ -362,11 +362,13 @@ label{
         box-sizing: border-box;
       
     }
-    
+   
 
-
-
-  
+    .payment .inputBox-gray input[type="text"], .payment .input-pair input[type="text"] {
+        width: 100%;
+        margin: 10px 0;
+        box-sizing: border-box;
+    }
 
   
 
